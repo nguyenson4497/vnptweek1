@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f8fa"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    tools:context=".Act2">
+
+    <include
+        android:id="@+id/action_bar_pay"
+        layout="@layout/action_bar_pay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:background="#f6f8fa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_pay">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="48dp"
+            android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/dashboard_trading"
+                android:padding="17dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_avatar_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bitmap_copy_5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_name_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/david_paz"
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_avatar_user" />
+
+                <TextView
+                    android:id="@+id/tv_email_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/davidpaz_correo_com"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_user" />
+
+                <TextView
+                    android:id="@+id/tv_text_mesaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/mensaje_2"
+                    android:textColor="#1b1b1b"
+                    android:textSize="10sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_email_user"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/este_es_el_dinero_de_la_entradas"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_text_mesaje" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pay_money"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="24dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/_20_00"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_name_user" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/dashboard_trading"
+                android:paddingLeft="22dp"
+                android:paddingTop="24dp"
+                android:paddingRight="22dp"
+                android:paddingBottom="36dp"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_1">
+
+                <TextView
+                    android:id="@+id/tv_tipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/tipo_de_pago"
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/keyboard_arrow_right_black_18_dp_copy_2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/personal"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    app:layout_constraintRight_toLeftOf="@+id/iv_arrow_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_line_pay_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/dashboard_line"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tipo" />
+
+                <ImageView
+                    android:id="@+id/iv_bbva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/bitmap_copy"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_line_pay_1" />
+
+                <TextView
+                    android:id="@+id/tv_bbva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/bbva"
+                    android:textColor="#1b1b1b"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toRightOf="@id/iv_bbva"
+                    app:layout_constraintTop_toTopOf="@id/iv_bbva" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/_9889"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_bbva"
+                    app:layout_constraintTop_toBottomOf="@id/tv_bbva" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/keyboard_arrow_right_black_18_dp_copy_2"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_number"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_bbva" />
+
+                <ImageView
+                    android:id="@+id/iv_line_pay_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/dashboard_line"
+                    app:layout_constraintTop_toBottomOf="@id/iv_bbva" />
+
+                <TextView
+                    android:id="@+id/tv_tarifas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/tarifas_por_transacci_n"
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_line_pay_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0_00"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_tarifas" />
+
+                <ImageView
+                    android:id="@+id/iv_line_pay_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/dashboard_line"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tarifas" />
+
+                <TextView
+                    android:id="@+id/tv_pagas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/t_pagas"
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_line_pay_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20_00"
+                    android:textColor="#00d090"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_pagas"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_pagas" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/pay_button"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:paddingLeft="100dp"
+                android:paddingTop="20dp"
+                android:paddingRight="100dp"
+                android:paddingBottom="20dp"
+                android:text="@string/enviar_ahora"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraint_2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
